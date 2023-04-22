@@ -7,7 +7,10 @@
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"lint": "eslint ./",
+		"lint:fix": "npx eslint --fix ./",
+		"stylelint": "npx stylelint **/*.scss"
 	},
 	"repository": {
 		"type": "git",
@@ -32,12 +35,13 @@
 		"eslint-plugin-prettier": "4.2.1",
 		"eslint-plugin-simple-import-sort": "10.0.0",
 		"eslint-plugin-unused-imports": "2.0.0",
-		"husky": "8.0.3",
+		"husky": "^8.0.0",
 		"lint-staged": "13.2.1",
 		"markdownlint": "0.28.1",
 		"prettier": "2.8.7",
-		"stylelint": "15.5.0",
-		"stylelint-config-standard-scss": "8.0.0",
+		"stylelint": "^15.5.0",
+		"stylelint-config-standard-scss": "^8.0.0",
+		"stylelint-order": "6.0.3",
 		"typescript": "5.0.4",
 		"vite": "^4.3.0"
 	},
