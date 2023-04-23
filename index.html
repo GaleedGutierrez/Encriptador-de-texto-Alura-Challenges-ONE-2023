@@ -2,12 +2,64 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="icon" type="image/ico" href="./assets/img/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vite + TS</title>
+		<title>Encriptador</title>
 	</head>
 	<body>
-		<div id="app"></div>
-		<script type="module" src="/src/main.ts"></script>
+		<header>
+			<figure>
+				<img src="./assets/img/alura-logo.webp" alt="Logo de Alura" />
+			</figure>
+		</header>
+		<main>
+			<section>
+				<form action="">
+					<label for="textarea">
+						<textarea
+							type="text"
+							name=""
+							id="textarea"
+							placeholder="Ingrese el texto aquí"
+							class="a-encrypt-box"
+							autofocus
+						></textarea>
+					</label>
+				</form>
+				<div>
+					<figure>
+						<img src="./assets/img/exclamation-mark-icon.webp" alt="Signo de exclamación">
+					</figure>
+					<p class="a-lead-clarify">
+						<small>Solo letras minúsculas y acentos</small>
+					</p>
+				</div>
+				<button class="a-btn a-btn--primary a-btn--block">
+					Encriptar
+				</button>
+				<button class="a-btn a-btn--secondary a-btn--block">
+					Desencriptar
+				</button>
+			</section>
+			<section class="m-result-box">
+				<h3 class="a-subtitle">Ningún mensaje fue encontrado</h3>
+				<p class="a-lead">
+					Ingresa el texto que desees encriptar o desencriptar.
+				</p>
+			</section>
+			<section class="m-result-box">
+				<h4 class="a-lead-result">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Aliquid illo provident accusantium officia minima dolorum
+					iure ad architecto, quam nisi inventore, vitae neque maxime
+					debitis reprehenderit amet. Reiciendis, amet omnis?
+				</h4>
+				<button class="a-btn a-btn--secondary a-btn--block">
+					Copiar
+				</button>
+			</section>
+		</main>
+		<script type="module" src="./src/index.ts"></script>
 	</body>
 </html>
