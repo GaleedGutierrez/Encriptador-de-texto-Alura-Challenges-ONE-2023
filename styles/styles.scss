@@ -15,18 +15,10 @@
 @import "./objects/ui-list";
 
 // Atoms
-@import "./atoms/button";
+@import "./atoms/btn";
 @import "./atoms/lead";
+@import "./atoms/encrypt-box";
+@import "./atoms/titles";
 
 // Molecules
-@import "./molecules/card";
-
-// Organisms
-@import "./organisms/characters";
-@import "./organisms/characters-details";
-@import "./organisms/footer";
-@import "./organisms/header";
-@import "./organisms/main-content";
-
-// Utilities
-@import "./utilities/error-404"
+@import "./molecules/result-box";
