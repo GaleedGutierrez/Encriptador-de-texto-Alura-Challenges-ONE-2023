@@ -1,0 +1,64 @@
+// Base colors
+$_white: #fff;
+$_alice-blue: #F3F5FC;
+$_anti-flash-white: #EFF1FA;
+$_lavender-web: #E9ECF8;
+$_wild-blue-yonder: #AAB2D5;
+$_shadow-blue: #757FB2;
+$_carolina-blue: #609ED4;
+$_lapis-lazuli: #356EA9;
+$_ateneo-blue: #0A3871;
+$_oxford-blue: #052051;
+$_light-gray: #CED4DA;
+$_cadet-blue: #ADB5BD;
+$_roman-silver: #868E96;
+$_davys-grey: #495057;
+$_onyx: #343A40;
+$_black: #000;
+
+// Gral
+// Gral__Blue
+$light-blue-100: $_alice-blue;
+$light-blue-200: $_anti-flash-white;
+$light-blue-300: $_lavender-web;
+$light-blue-400: $_wild-blue-yonder;
+$light-blue-500: $_shadow-blue;
+$dark-blue-100: $_carolina-blue;
+$dark-blue-200: $_lapis-lazuli;
+$dark-blue-300: $_ateneo-blue;
+$dark-blue-400: $_oxford-blue;
+
+// Gral__Gray
+$gray-100: $_light-gray;
+$gray-200: $_cadet-blue;
+$gray-300: $_roman-silver;
+$gray-400: $_davys-grey;
+$gray-500: $_onyx;
+
+// Gral__Black
+$pure-black: $_black;
+
+// Gral__White
+$pure-white: $_white;
+
+// Primary
+$primary-color: $dark-blue-300;
+
+// $primary-shade-1
+
+// Shadow
+$shadow-background: #C4C4C4;
+$params-box-shadow: 0 2.4rem 3.2rem -0.8rem rgb($pure-black, 8%);
+
+
+// Background
+$background-light-color: $light-blue-100;
+
+// Text
+$text-color: $dark-blue-300;
+$text-blue-light-color: $dark-blue-200;
+$text-blue-lighter-color: $dark-blue-100;
+$text-gray-color: $gray-400;
+$text-gray-darker-color: $gray-500;
+$text-light-color: $light-blue-100;
+

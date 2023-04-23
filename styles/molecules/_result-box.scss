@@ -1,0 +1,11 @@
+@use "../settings/variables";
+
+.m-result-box {
+	display: flex;
+	gap: variables.$space-4;
+	flex-direction: column;
+	padding: variables.$space-8;
+	border-radius: variables.$space-8;
+	text-align: center;
+	box-shadow: variables.$params-box-shadow;
+}
