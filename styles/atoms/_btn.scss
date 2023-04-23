@@ -1,0 +1,34 @@
+@use "../settings/variables";
+
+.a-btn {
+	display: inline-block;
+	padding: variables.$space-6;
+	border: variables.$space-025 solid variables.$dark-blue-300;
+	border-radius: variables.$border-radius-6;
+
+	&--primary {
+		background-color: variables.$dark-blue-300;
+		color: variables.$text-light-color;
+
+		&:active {
+			background-color: variables.$background-light-color;
+			color: variables.$text-color;
+		}
+	}
+
+	&--secondary {
+		border: variables.$space-025 solid variables.$dark-blue-300;
+		background-color: variables.$background-light-color;
+		color: variables.$text-color;
+
+		&:active {
+			background-color: variables.$dark-blue-300;
+			color: variables.$text-light-color;
+		}
+	}
+
+	&--block {
+		display: block;
+		width: 100%;
+	}
+}

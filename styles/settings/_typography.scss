@@ -1,0 +1,39 @@
+// Weight
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+
+// Font Family
+@font-face {
+	font-family: Inter;
+	src: url("./assets/font-family/Inter/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+}
+
+$_font-family: "Inter", sans-serif;
+$primary-font: $_font-family;
+
+// Typography scale
+$fs-base: 62.5%;
+
+// Typography applications
+$fs-body-sm: 1.2rem;
+$fs-body-md: 1.4rem;
+$fs-body-lg: 1.6rem;
+$fs-title-xs: 1.2rem;
+$fs-title-sm: 1.4rem;
+$fs-title-md: 1.6rem;
+$fs-title-lg: 2rem;
+$fs-title-xl: 2.4rem;
+$fs-title-2xl: 2.8rem;
+$fs-title-3xl: 3.2rem;
+$fs-title-4xl: 4rem;
+
+// Line Height
+$lh-1: 1.6rem;
+$lh-2: 2rem;
+$lh-3: 2.4rem;
+$lh-4: 2.8rem;
+$lh-5: 3.2rem;
+$lh-6: 4rem;
+$lh-7: 4.8rem;

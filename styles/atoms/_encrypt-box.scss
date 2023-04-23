@@ -1,0 +1,16 @@
+@use "../settings/variables";
+
+.a-encrypt-box {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: none;
+	resize: none;
+	background-color: variables.$background-light-color;
+	font-size: variables.$fs-title-4xl;
+	color: variables.$text-color;
+
+	&::placeholder {
+		color: variables.$text-blue-lighter-color;
+	}
+}

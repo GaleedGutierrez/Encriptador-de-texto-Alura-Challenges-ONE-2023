@@ -1,0 +1,67 @@
+// Z-Index Scale (private vars)
+// -------------------------
+$_z-index-1: 1;
+$_z-index-2: 2;
+$_z-index-3: 3;
+$_z-index-4: 4;
+$_z-index-5: 5;
+$_z-index-6: 6;
+$_z-index-7: 7;
+$_z-index-8: 8;
+$_z-index-9: 9;
+$_z-index-10: 10;
+
+// Z-Index Applications
+// -------------------------
+$z-index-1-screen-foreground: $_z-index-1;
+$z-index-1-follow-up-visibility: $_z-index-1;
+$z-index-1-prl-welcome: $_z-index-1;
+$z-index-1-app-image-dropdown: $_z-index-1;
+$z-index-1-surface-under: $_z-index-1;
+$z-index-1-block-group: $_z-index-1;
+
+// ? A prueba
+$z-index-2-surface-over: $_z-index-2;
+$z-index-2-image-picker-control: $_z-index-2;
+$z-index-2-collection-card-button: $_z-index-2;
+$z-index-2-block-group-button-group: $_z-index-2;
+$z-index-2-block-group-focused: $_z-index-2;
+$z-index-2-block-group-overlay: $_z-index-2;
+
+// ? A prueba
+$z-index-3-caption: $_z-index-3;
+$z-index-3-block-insert-control: $_z-index-3;
+
+// ? A prueba
+$z-index-5-figure-overlay: $_z-index-5;
+$z-index-5-highlight-menu: $_z-index-5;
+$z-index-5-metabar: $_z-index-5;
+$z-index-5-profile-avatar: $_z-index-5;
+$z-index-5-note-recommendations: $_z-index-5;
+$z-index-5-collection-logo: $_z-index-5;
+
+// ? A prueba
+$z-index-6-matter-logo: $_z-index-6;
+$z-index-6-editor-sidebar: $_z-index-6;
+$z-index-6-nav-overlay: $_z-index-6;
+
+// ? A prueba
+$z-index-7-nav: $_z-index-7;
+
+// ? A prueba
+$z-index-8-transitioning-container: $_z-index-8;
+$z-index-8-panel: $_z-index-8;
+$z-index-8-butter-bar: $_z-index-8;
+$z-index-8-loading-bar: $_z-index-8;
+$z-index-8-zoom-overlay: $_z-index-8;
+
+// ? A prueba
+$z-index-9-zoom-overlay-target: $_z-index-9;
+$z-index-9-nav-overlay-touch: $_z-index-9;
+$z-index-9-overlay: $_z-index-9;
+$z-index-9-dialog: $_z-index-9;
+$z-index-9-tooltip: $_z-index-9;
+
+// Z index para debugging
+$z-index-10-dev: $_z-index-10;
+

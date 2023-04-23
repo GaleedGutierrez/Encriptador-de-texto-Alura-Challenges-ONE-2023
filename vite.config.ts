@@ -3,7 +3,7 @@ import { defineConfig, UserConfigExport } from 'vite';
 const config: UserConfigExport = {
 	base: './',
 	server: {
-		open: '/public/',
+		open: './',
 		port: 8080,
 		host: true,
 	},

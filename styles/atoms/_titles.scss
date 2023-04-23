@@ -1,0 +1,5 @@
+@use "../settings/variables";
+
+.a-subtitle {
+	color: variables.$text-gray-darker-color ;
+}

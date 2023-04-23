@@ -1,0 +1,16 @@
+@use "../settings/variables";
+
+.a-lead {
+	color: variables.$text-gray-darker-color;
+}
+
+.a-lead-result {
+	font-weight: normal;
+	color: variables.$text-gray-darker-color;
+}
+
+.a-lead-clarify {
+	color: variables.$text-gray-color;
+}
+
+
