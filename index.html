@@ -8,13 +8,13 @@
 		<title>Encriptador</title>
 	</head>
 	<body>
-		<header>
+		<header class="m-header">
 			<figure>
-				<img src="./assets/img/alura-logo.webp" alt="Logo de Alura" />
+				<img src="./assets/img/alura-logo.webp" alt="Logo de Alura" class="m-header__logo"/>
 			</figure>
 		</header>
 		<main>
-			<section>
+			<section class="m-encrypt-zone">
 				<form action="">
 					<label for="textarea">
 						<textarea
@@ -27,7 +27,7 @@
 						></textarea>
 					</label>
 				</form>
-				<div>
+				<div class="m-encrypt-zone__clarify">
 					<figure>
 						<img src="./assets/img/exclamation-mark-icon.webp" alt="Signo de exclamación">
 					</figure>
@@ -35,12 +35,14 @@
 						<small>Solo letras minúsculas y acentos</small>
 					</p>
 				</div>
-				<button class="a-btn a-btn--primary a-btn--block">
-					Encriptar
-				</button>
-				<button class="a-btn a-btn--secondary a-btn--block">
-					Desencriptar
-				</button>
+				<div class="m-encrypt-zone__buttons">
+					<button class="a-btn a-btn--primary a-btn--block">
+						Encriptar
+					</button>
+					<button class="a-btn a-btn--secondary a-btn--block">
+						Desencriptar
+					</button>
+				</div>
 			</section>
 			<section class="m-result-box">
 				<h3 class="a-subtitle">Ningún mensaje fue encontrado</h3>
@@ -48,7 +50,7 @@
 					Ingresa el texto que desees encriptar o desencriptar.
 				</p>
 			</section>
-			<section class="m-result-box">
+			<section class="m-result-box hidden">
 				<h4 class="a-lead-result">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Aliquid illo provident accusantium officia minima dolorum

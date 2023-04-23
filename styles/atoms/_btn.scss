@@ -6,9 +6,23 @@
 	border: variables.$space-025 solid variables.$dark-blue-300;
 	border-radius: variables.$border-radius-6;
 
+	// transition-duration: 400ms;
+	&:hover {
+		border-color: variables.$background-light-intermediate-color;
+		background-color: variables.$background-light-intermediate-color;
+		color: variables.$text-light-color;
+	}
+
 	&--primary {
 		background-color: variables.$dark-blue-300;
 		color: variables.$text-light-color;
+
+
+		&:hover {
+			border-color: variables.$background-light-intermediate-color;
+			background-color: variables.$background-light-intermediate-color;
+			color: variables.$text-light-color;
+		}
 
 		&:active {
 			background-color: variables.$background-light-color;
