@@ -10,3 +10,30 @@ body {
 
 	@include mixins.body-lg;
 }
+
+
+// Tablet
+@media screen and (min-width: variables.$screen-tablet) {
+	body {
+		padding-inline: variables.$space-10;
+	}
+}
+
+// Desktop
+@media screen and (min-width: variables.$screen-desktop) {
+	body {
+		display: flex;
+		flex-direction: column;
+		max-width: variables.$max-width;
+		height: 100%;
+		padding-block: variables.$space-10;
+		margin-inline: auto;
+	}
+}
+
+// Extra large screen
+@media screen and (width >= calc(variables.$max-width + variables.$space-20)) {
+	body {
+		padding-inline: 0;
+	}
+}

@@ -1,0 +1,9 @@
+/* stylelint-disable no-invalid-position-at-import-rule */
+@media screen and (width >= 1024px) {
+	// Molecules
+	@import "./molecules/result-box--desktop";
+
+	// Organisms
+	@import "./organisms/main-content";
+	@import "./organisms/encrypt-zone--desktop";
+}

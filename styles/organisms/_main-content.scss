@@ -1,0 +1,8 @@
+@use "../settings/variables";
+
+.o-main {
+	display: grid;
+	gap: variables.$space-20;
+	grid-template-columns: 2fr 1fr;
+	height: 100%;
+}

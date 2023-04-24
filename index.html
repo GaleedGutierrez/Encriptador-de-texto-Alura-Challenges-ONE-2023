@@ -13,7 +13,7 @@
 				<img src="./assets/img/alura-logo.webp" alt="Logo de Alura" class="m-header__logo"/>
 			</figure>
 		</header>
-		<main>
+		<main class="o-main">
 			<section class="m-encrypt-zone">
 				<form action="">
 					<label for="textarea">
@@ -27,28 +27,33 @@
 						></textarea>
 					</label>
 				</form>
-				<div class="m-encrypt-zone__clarify">
-					<figure>
-						<img src="./assets/img/exclamation-mark-icon.webp" alt="Signo de exclamación">
-					</figure>
-					<p class="a-lead-clarify">
-						<small>Solo letras minúsculas y acentos</small>
-					</p>
-				</div>
-				<div class="m-encrypt-zone__buttons">
-					<button class="a-btn a-btn--primary a-btn--block">
-						Encriptar
-					</button>
-					<button class="a-btn a-btn--secondary a-btn--block">
-						Desencriptar
-					</button>
+				<div>
+					<div class="m-encrypt-zone__clarify">
+						<figure>
+							<img src="./assets/img/exclamation-mark-icon.webp" alt="Signo de exclamación">
+						</figure>
+						<p class="a-lead-clarify">
+							<small>Solo letras minúsculas y acentos</small>
+						</p>
+					</div>
+					<div class="m-encrypt-zone__buttons">
+						<button class="a-btn a-btn--primary a-btn--block">
+							Encriptar
+						</button>
+						<button class="a-btn a-btn--secondary a-btn--block">
+							Desencriptar
+						</button>
+					</div>
 				</div>
 			</section>
-			<section class="m-result-box hidden">
-				<h3 class="a-subtitle">Ningún mensaje fue encontrado</h3>
-				<p class="a-lead">
-					Ingresa el texto que desees encriptar o desencriptar.
-				</p>
+			<section class="m-result-box m-result-box--initial hidden">
+					<figure class="">
+						<img src="./assets/img/muneco.webp" alt="">
+					</figure>
+					<h3 class="a-subtitle m-result-box__title">Ningún mensaje fue encontrado</h3>
+					<p class="a-lead">
+						Ingresa el texto que desees encriptar o desencriptar.
+					</p>
 			</section>
 			<section class="m-result-box">
 				<h4 class="a-lead-result">

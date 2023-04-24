@@ -1,0 +1,9 @@
+@use "../settings/variables";
+
+
+.m-encrypt-zone {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-block-end: variables.$space-8;
+}
