@@ -1,0 +1,14 @@
+@use "../settings/variables";
+
+.m-result-box {
+	justify-content: space-between;
+
+	&--initial {
+		gap: 0;
+		justify-content: center;
+	}
+
+	&__title {
+		margin-block: variables.$space-8 variables.$space-4;
+	}
+}
