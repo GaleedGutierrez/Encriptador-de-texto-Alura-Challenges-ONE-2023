@@ -1,0 +1,8 @@
+@use "../settings/variables";
+
+.m-encrypt-zone {
+	&__buttons {
+		flex-direction: row;
+	}
+}
+
