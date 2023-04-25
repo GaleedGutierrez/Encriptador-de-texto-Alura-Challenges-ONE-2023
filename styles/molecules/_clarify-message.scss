@@ -1,0 +1,12 @@
+@use "../settings/variables";
+
+
+.m-clarify-message {
+	display: flex;
+	gap: variables.$space-2;
+	align-items: center;
+
+	&--wrong {
+		color: variables.$wrong-color;
+	}
+}

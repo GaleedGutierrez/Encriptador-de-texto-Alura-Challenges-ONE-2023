@@ -1,0 +1,16 @@
+@use "../settings/variables";
+
+.a-exclamation-mark-icon {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: variables.$space-4;
+	height: variables.$space-4;
+	border-radius: 50%;
+	background-color: variables.$background-dark-color;
+	color: variables.$text-white;
+
+	&--wrong {
+		background-color: variables.$background-wrong-color;
+	}
+}

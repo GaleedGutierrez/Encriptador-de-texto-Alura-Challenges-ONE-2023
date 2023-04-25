@@ -15,4 +15,8 @@
 		gap: variables.$space-6;
 		flex-direction: column;
 	}
+
+	&__form {
+		flex-grow: 1;
+	}
 }
