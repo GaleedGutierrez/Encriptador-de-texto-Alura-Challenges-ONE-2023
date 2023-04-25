@@ -3,10 +3,7 @@
 .m-encrypt-zone {
 	margin-block: variables.$space-20 variables.$space-16;
 
-	&__clarify {
-		display: flex;
-		gap: variables.$space-2;
-		align-items: center;
+	&__message {
 		margin-block: variables.$space-4;
 	}
 

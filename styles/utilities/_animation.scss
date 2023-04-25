@@ -1,44 +1,46 @@
+@use "../settings/variables";
+
 @keyframes shake {
 	0% {
-		transform: translate(1px, 0) ;
+		transform: translate(variables.$space-025, 0) ;
 	}
 
 	10% {
-		transform: translate(-1px, 0);
+		transform: translate(calc(variables.$space-025 * -1), 0);
 	}
 
 	20% {
-		transform: translate(-2px, 0) ;
+		transform: translate(calc(variables.$space-05 * -1), 0) ;
 	}
 
 	30% {
-		transform: translate(2px, 0) ;
+		transform: translate(variables.$space-05, 0) ;
 	}
 
 	40% {
-		transform: translate(1px, 0) ;
+		transform: translate(variables.$space-05, 0) ;
 	}
 
-	50% { transform: translate(-1px, 0) ;
+	50% { transform: translate(calc(variables.$space-025 * -1), 0) ;
 	}
 
 	60% {
-		transform: translate(-2px, 0) ;
+		transform: translate(calc(variables.$space-05 * -1), 0) ;
 	}
 
 	70% {
-		transform: translate(2px, 0) ;
+		transform: translate(variables.$space-05, 0) ;
 	}
 
 	80% {
-		transform: translate(-1px, 0) ;
+		transform: translate(calc(variables.$space-025 * -1), 0) ;
 	}
 
 	90% {
-		transform: translate(1px, 0) ;
+		transform: translate(variables.$space-025, 0) ;
 	}
 
 	100% {
-		transform: translate(1px, 0) ;
+		transform: translate(variables.$space-025, 0) ;
 	}
 }
