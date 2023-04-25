@@ -15,7 +15,7 @@ import {
 	TEXTAREA,
 } from './nodes.mjs';
 
-function toggleWrongStyles(event: KeyboardEvent) {
+function toggleWrongStyles(event: KeyboardEvent): void {
 	const TARGET = event.target as HTMLTextAreaElement;
 	const SENTENCE = TARGET.value;
 	const IS_SENTENCE_OK = REGEX_ACCEPT.test(SENTENCE);
@@ -34,7 +34,7 @@ function toggleWrongStyles(event: KeyboardEvent) {
 	}
 }
 
-function toggleMuneco() {
+function toggleMuneco(): void {
 	const DESKTOP_SCREEN = 1024;
 	const WIDTH = window.innerWidth;
 
@@ -45,9 +45,9 @@ function toggleMuneco() {
 	}
 }
 
-const isSentenceEmpty = (sentence: string) => sentence.length === 0;
+const isSentenceEmpty = (sentence: string): boolean => sentence.length === 0;
 
-function toggleResultBox(sentence: string) {
+function toggleResultBox(sentence: string): void {
 	const IS_SENTENCE_EMPTY = isSentenceEmpty(sentence);
 	const IS_SENTENCE_OK = REGEX_ACCEPT.test(sentence);
 
@@ -60,16 +60,45 @@ function toggleResultBox(sentence: string) {
 	}
 }
 
-function encrypt() {
-	const SENTENCE = TEXTAREA.value;
-	const IS_SENTENCE_EMPTY = isSentenceEmpty(SENTENCE);
-	const IS_SENTENCE_OK = REGEX_ACCEPT.test(SENTENCE);
+function validateSentence(sentence: string): boolean {
+	const IS_SENTENCE_EMPTY = isSentenceEmpty(sentence);
+	const IS_SENTENCE_OK = REGEX_ACCEPT.test(sentence);
 
 	if (IS_SENTENCE_EMPTY || !IS_SENTENCE_OK) {
-		toggleResultBox(SENTENCE);
+		toggleResultBox(sentence);
+
+		return true;
+	}
+
+	return false;
+}
+
+function copy() {
+	TEXTAREA.value = RESULT_TEXT.innerText;
+}
+
+function toggleError(event: KeyboardEvent): void {
+	const TARGET = event.target as HTMLTextAreaElement;
+	const SENTENCE = TARGET.value;
+	const IS_SENTENCE_OK = REGEX_ACCEPT.test(SENTENCE);
+	const IS_SENTENCE_EMPTY = isSentenceEmpty(SENTENCE);
+
+	TEXTAREA.classList.remove('animation-wrong');
+	CLARIFY_MESSAGE.classList.remove('animation-wrong');
+
+	if (!IS_SENTENCE_OK && !IS_SENTENCE_EMPTY) {
+		TEXTAREA.classList.add('animation-wrong');
+		CLARIFY_MESSAGE.classList.add('animation-wrong');
 
 		return;
 	}
+}
+
+function encrypt(): void {
+	const SENTENCE = TEXTAREA.value;
+	const IS_WRONG = validateSentence(SENTENCE);
+
+	if (IS_WRONG) return;
 
 	let newSentence = '';
 
@@ -85,20 +114,13 @@ function encrypt() {
 	RESULT_TEXT.innerText = newSentence;
 }
 
-function decrypt() {
+function decrypt(): void {
 	const SENTENCE = TEXTAREA.value;
-	const IS_SENTENCE_EMPTY = isSentenceEmpty(SENTENCE);
-	const IS_SENTENCE_OK = REGEX_ACCEPT.test(SENTENCE);
+	const IS_WRONG = validateSentence(SENTENCE);
 
-	if (IS_SENTENCE_EMPTY || !IS_SENTENCE_OK) {
-		toggleResultBox(SENTENCE);
-
-		return;
-	}
+	if (IS_WRONG) return;
 
 	let newSentence = '';
-
-	const VOWELS_I_O_U = ['i', 'o', 'u'];
 
 	for (let i = 0; i < SENTENCE.length; i++) {
 		const LETTER = SENTENCE[i];
@@ -127,34 +149,11 @@ function decrypt() {
 		const VOWEL =
 			DECRYPT_VOWELS[encryptWord as keyof typeof DECRYPT_VOWELS];
 
-		if (VOWEL === undefined) return;
-
 		newSentence += VOWEL;
 	}
 
 	toggleResultBox(SENTENCE);
 	RESULT_TEXT.innerText = newSentence;
-}
-
-function copy() {
-	TEXTAREA.value = RESULT_TEXT.innerText;
-}
-
-function toggleError(event: KeyboardEvent) {
-	const TARGET = event.target as HTMLTextAreaElement;
-	const SENTENCE = TARGET.value;
-	const IS_SENTENCE_OK = REGEX_ACCEPT.test(SENTENCE);
-	const IS_SENTENCE_EMPTY = isSentenceEmpty(SENTENCE);
-
-	TEXTAREA.classList.remove('animation-wrong');
-	CLARIFY_MESSAGE.classList.remove('animation-wrong');
-
-	if (!IS_SENTENCE_OK && !IS_SENTENCE_EMPTY) {
-		TEXTAREA.classList.add('animation-wrong');
-		CLARIFY_MESSAGE.classList.add('animation-wrong');
-
-		return;
-	}
 }
 
 const ENCRYPT_VOWELS = {
@@ -172,12 +171,13 @@ const DECRYPT_VOWELS = {
 	ufat: 'u',
 };
 const ARRAY_VOWELS = Object.keys(ENCRYPT_VOWELS);
+const VOWELS_I_O_U = ARRAY_VOWELS.slice(2, 5);
 const REGEX_ACCEPT = new RegExp('^[a-z\\n ]+$');
 
 TEXTAREA.addEventListener('keyup', toggleWrongStyles);
 TEXTAREA.addEventListener('keyup', toggleError);
-window.addEventListener('resize', toggleMuneco);
-window.addEventListener('load', toggleMuneco);
 BTN_ENCRYPT.addEventListener('click', encrypt);
 BTN_DECRYPT.addEventListener('click', decrypt);
 BTN_COPY.addEventListener('click', copy);
+window.addEventListener('resize', toggleMuneco);
+window.addEventListener('load', toggleMuneco);
