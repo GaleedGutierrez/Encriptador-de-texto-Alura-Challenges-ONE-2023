@@ -3,6 +3,6 @@
 .o-main {
 	display: grid;
 	gap: variables.$space-20;
-	grid-template-columns: 2fr variables.$space-100;
+	grid-template-columns: 2fr variables.$max-width-element-001;
 	height: 100%;
 }

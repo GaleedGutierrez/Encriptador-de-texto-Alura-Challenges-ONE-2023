@@ -6,7 +6,7 @@
 	align-items: center;
 	width: variables.$space-4;
 	height: variables.$space-4;
-	border-radius: 50%;
+	border-radius: variables.$border-radius-circle;
 	background-color: variables.$background-dark-color;
 	color: variables.$text-white;
 

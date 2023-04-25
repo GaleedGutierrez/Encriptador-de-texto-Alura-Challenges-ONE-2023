@@ -32,19 +32,17 @@
 					</label>
 				</form>
 				<div>
-					<div class="m-encrypt-zone__clarify">
-						<p
-							id="clarify-message"
-							class="a-lead-clarify m-clarify-message"
+					<p
+						id="clarify-message"
+						class="a-lead-clarify m-clarify-message m-encrypt-zone__message"
+					>
+						<span
+							id="exclamation-mark-icon"
+							class="a-exclamation-mark-icon"
+							>!</span
 						>
-							<span
-								id="exclamation-mark-icon"
-								class="a-exclamation-mark-icon"
-								>!</span
-							>
-							<small>Solo letras minúsculas y acentos</small>
-						</p>
-					</div>
+						<small>Solo letras minúsculas y acentos</small>
+					</p>
 					<div class="m-encrypt-zone__buttons">
 						<button
 							id="btn-encrypt"
@@ -61,7 +59,10 @@
 					</div>
 				</div>
 			</section>
-			<section id="initial-box-result" class="m-result-box m-result-box--initial">
+			<section
+				id="initial-box-result"
+				class="m-result-box m-result-box--initial"
+			>
 				<figure id="muneco-img" class="hidden">
 					<img src="./assets/img/muneco.webp" alt="" />
 				</figure>
@@ -88,7 +89,10 @@
 			</section>
 		</main>
 		<script type="module" src="./src/index.ts"></script>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-M8H4YB694S"></script>
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-M8H4YB694S"
+		></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag() {
