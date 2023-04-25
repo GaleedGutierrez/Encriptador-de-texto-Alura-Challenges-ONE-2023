@@ -15,6 +15,7 @@ $_roman-silver: #868E96;
 $_davys-grey: #495057;
 $_onyx: #343A40;
 $_black: #000;
+$_sunset-orange: #F45457;
 
 // Gral
 // Gral__Blue
@@ -41,6 +42,9 @@ $pure-black: $_black;
 // Gral__White
 $pure-white: $_white;
 
+// Wrong
+$wrong-color: $_sunset-orange;
+
 // Primary
 $primary-color: $dark-blue-300;
 
@@ -55,6 +59,8 @@ $params-box-shadow: 0 2.4rem 3.2rem -0.8rem rgb($pure-black, 8%);
 $background-light-color: $light-blue-100;
 $background-light-intermediate-color: $light-blue-500;
 $background-lighter-color: $pure-white;
+$background-dark-color: $gray-400;
+$background-wrong-color: $wrong-color;
 
 // Text
 $text-color: $dark-blue-300;
@@ -63,4 +69,5 @@ $text-blue-lighter-color: $dark-blue-100;
 $text-gray-color: $gray-400;
 $text-gray-darker-color: $gray-500;
 $text-light-color: $light-blue-100;
+$text-white: $pure-white;
 

@@ -10,6 +10,11 @@
 	font-size: variables.$fs-title-4xl;
 	color: variables.$text-color;
 
+	&--wrong {
+		color: variables.$wrong-color;
+	}
+
+
 	&::placeholder {
 		color: variables.$text-blue-lighter-color;
 	}

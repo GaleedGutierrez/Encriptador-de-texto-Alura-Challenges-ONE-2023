@@ -174,7 +174,7 @@ const rules = {
 	'import/first': 'error',
 	'import/newline-after-import': 'error',
 	'import/no-duplicates': 'error',
-	'import/no-unresolved': 'error',
+	'import/no-unresolved': ['error', { ignore: ['\\.mjs'] }],
 	'import/no-webpack-loader-syntax': 'error',
 	'simple-import-sort/imports': 'error',
 	'simple-import-sort/exports': 'error',
@@ -210,7 +210,15 @@ const rules = {
 	'no-unmodified-loop-condition': 'error',
 	'no-unreachable-loop': 'error',
 	'no-unused-private-class-members': 'error',
-	'no-use-before-define': 'error',
+	'no-use-before-define': [
+		'error',
+		{
+			functions: true,
+			classes: true,
+			variables: false,
+			allowNamedExports: false,
+		},
+	],
 	'require-atomic-updates': 'error',
 
 	//? good practices

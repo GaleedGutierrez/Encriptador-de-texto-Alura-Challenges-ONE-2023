@@ -32,7 +32,7 @@
 
 	&--secondary {
 		border: variables.$space-025 solid variables.$dark-blue-300;
-		background-color: variables.$background-light-color;
+		background-color: transparent;
 		color: variables.$text-color;
 
 		&:active {

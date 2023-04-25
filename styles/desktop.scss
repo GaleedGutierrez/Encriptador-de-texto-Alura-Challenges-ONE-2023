@@ -1,5 +1,8 @@
 /* stylelint-disable no-invalid-position-at-import-rule */
 @media screen and (width >= 1024px) {
+	// Atoms
+	@import "./atoms/encrypt-box--desktop";
+
 	// Molecules
 	@import "./molecules/result-box--desktop";
 
