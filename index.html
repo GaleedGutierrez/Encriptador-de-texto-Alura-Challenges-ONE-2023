@@ -3,12 +3,42 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="description" content="Herramienta de encriptación y desencriptación de texto. Desarrollada por Galeed Gutierrez y diseñada por Oracle Next Education en colaboración con Alura Latam.">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Herramienta de encriptación y desencriptación de texto. Desarrollada por Galeed Gutierrez y diseñada por Oracle Next Education en colaboración con Alura Latam."
+		/>
+		<meta name="robots" content="index,follow" />
+		<meta property="og:url" content="https://galeedgutierrez.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Galeed Gutierrez" />
+		<meta
+			property="og:description"
+			content="Encriptador y desencriptador de texto"
+		/>
+		<meta property="og:title" content="Galeed Gutierrez" />
+		<meta
+			property="og:image"
+			content="https://github.com/GaleedGutierrez/Encriptador-de-texto-Alura-Challenges-ONE-2023/raw/main/assets/readme/screenshot.webp"
+		/>
+		<meta property="og:locale" content="es_ES" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Galeed Gutierrez" />
+		<meta
+			name="twitter:description"
+			content="Encriptador y desencriptador de texto"
+		/>
+		<meta
+			name="twitter:image"
+			content="https://github.com/GaleedGutierrez/Encriptador-de-texto-Alura-Challenges-ONE-2023/raw/main/assets/readme/screenshot.webp"
+		/>
+		<meta name="twitter:site" content="@galeedgutierrez" />
+		<meta name="twitter:creator" content="@galeedgutierrez" />
+		<meta name="title" content="Encriptador" />
 		<link rel="icon" type="image/ico" href="./assets/img/favicon.ico" />
 		<title>Encriptador</title>
 	</head>
-	<body>
+	<body id="body" class="no-transition">
 		<header class="m-header">
 			<figure>
 				<img
@@ -66,7 +96,11 @@
 				class="m-result-box m-result-box--initial"
 			>
 				<figure id="muneco-img" class="hidden">
-					<img src="./assets/img/muneco.webp" title="Imagen de una persona viendo un diamante con una lupa" alt="Imagen de una persona viendo un diamante con una lupa" />
+					<img
+						src="./assets/img/muneco.webp"
+						title="Imagen de una persona viendo un diamante con una lupa"
+						alt="Imagen de una persona viendo un diamante con una lupa"
+					/>
 				</figure>
 				<h3 class="a-subtitle m-result-box__title">
 					Ningún mensaje fue encontrado
@@ -89,9 +123,14 @@
 					Copiar
 				</button>
 			</section>
-			<!-- <section>
-				<h2>Texto copiado</h2>
-			</section> -->
+			<section id="popup" class="popup-container">
+				<div class="popup">
+					<h2 class="popup__title">Copiado con éxito</h2>
+					<p class="popup__message">
+						Texto copiado a tu portapapeles
+					</p>
+				</div>
+			</section>
 		</main>
 		<script type="module" src="./src/index.ts"></script>
 		<script

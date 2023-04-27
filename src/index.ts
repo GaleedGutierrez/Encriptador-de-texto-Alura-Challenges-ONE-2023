@@ -4,6 +4,7 @@ import '../styles/desktop.scss';
 
 import { EVowels } from './enums.mjs';
 import {
+	BODY,
 	BTN_COPY,
 	BTN_DECRYPT,
 	BTN_ENCRYPT,
@@ -11,6 +12,7 @@ import {
 	EXCLAMATION_MARK_ICON,
 	INITIAL_BOX_RESULT,
 	MUNECO_IMG,
+	POPUP,
 	RESULT_TEXT,
 	RESULT_TEXT_CONTAINER,
 	TEXTAREA,
@@ -146,6 +148,8 @@ function decrypt(): void {
 		const VOWEL =
 			DECRYPT_VOWELS[encryptWord as keyof typeof DECRYPT_VOWELS];
 
+		if (VOWEL === undefined) return;
+
 		newSentence += VOWEL;
 	}
 
@@ -154,7 +158,13 @@ function decrypt(): void {
 }
 
 function copy() {
+	const TIME = 900;
+
 	navigator.clipboard.writeText(RESULT_TEXT.innerText);
+	POPUP.classList.add('popup-container--visible');
+	setTimeout(() => {
+		POPUP.classList.remove('popup-container--visible');
+	}, TIME);
 }
 
 const ENCRYPT_VOWELS = {
@@ -182,3 +192,6 @@ BTN_DECRYPT.addEventListener('click', decrypt);
 BTN_COPY.addEventListener('click', copy);
 window.addEventListener('resize', toggleMuneco);
 window.addEventListener('load', toggleMuneco);
+window.addEventListener('load', () => {
+	BODY.classList.remove('no-transition');
+});

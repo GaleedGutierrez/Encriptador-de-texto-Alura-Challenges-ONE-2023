@@ -1,0 +1,28 @@
+@use "../settings/variables";
+
+.popup-container {
+	visibility: hidden;
+	opacity: 0;
+	position: fixed;
+	inset: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(variables.$pure-black, 40%);
+	transition-duration: 600ms;
+
+	&--visible {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+
+.popup {
+	position: absolute;
+	left: calc(50% - 17.1655rem);
+	top: calc(50% - 6.2rem);
+	padding: variables.$space-8;
+	border-radius: variables.$space-8;
+	background-color: variables.$background-lighter-color;
+	text-align: center;
+}

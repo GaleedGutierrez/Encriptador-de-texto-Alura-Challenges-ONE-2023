@@ -1,6 +1,7 @@
 /* eslint-disable padding-line-between-statements */
 const $ = (selector: string) => document.querySelector(selector);
 
+export const BODY = $('#body') as HTMLBodyElement;
 export const BTN_ENCRYPT = $('#btn-encrypt') as HTMLButtonElement;
 export const BTN_DECRYPT = $('#btn-decrypt') as HTMLButtonElement;
 export const BTN_COPY = $('#btn-copy') as HTMLButtonElement;
@@ -15,3 +16,4 @@ export const RESULT_TEXT_CONTAINER = $(
 ) as HTMLHeadingElement;
 export const INITIAL_BOX_RESULT = $('#initial-box-result') as HTMLElement;
 export const MUNECO_IMG = $('#muneco-img') as HTMLImageElement;
+export const POPUP = $('#popup') as HTMLElement;
