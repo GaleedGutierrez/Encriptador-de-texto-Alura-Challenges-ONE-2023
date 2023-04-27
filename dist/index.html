@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Herramienta de encriptación y desencriptación de texto. Desarrollada por Galeed Gutierrez y diseñada por Oracle Next Education en colaboración con Alura Latam."
+		/>
+		<meta name="robots" content="index,follow" />
+		<meta property="og:url" content="https://galeedgutierrez.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Galeed Gutierrez" />
+		<meta
+			property="og:description"
+			content="Encriptador y desencriptador de texto"
+		/>
+		<meta property="og:title" content="Galeed Gutierrez" />
+		<meta
+			property="og:image"
+			content="https://github.com/GaleedGutierrez/Encriptador-de-texto-Alura-Challenges-ONE-2023/raw/main/assets/readme/screenshot.webp"
+		/>
+		<meta property="og:locale" content="es_ES" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Galeed Gutierrez" />
+		<meta
+			name="twitter:description"
+			content="Encriptador y desencriptador de texto"
+		/>
+		<meta
+			name="twitter:image"
+			content="https://github.com/GaleedGutierrez/Encriptador-de-texto-Alura-Challenges-ONE-2023/raw/main/assets/readme/screenshot.webp"
+		/>
+		<meta name="twitter:site" content="@galeedgutierrez" />
+		<meta name="twitter:creator" content="@galeedgutierrez" />
+		<meta name="title" content="Encriptador" />
+		<link rel="icon" type="image/ico" href="./assets/favicon-e0bbe1b9.ico" />
+		<title>Encriptador</title>
+		<script type="module" crossorigin src="./assets/index-c7c3a705.js"></script>
+		<link rel="stylesheet" href="./assets/index-0f8b66f7.css">
+	</head>
+	<body id="body" class="no-transition">
+		<header class="m-header">
+			<figure>
+				<img
+					src="data:image/webp;base64,UklGRnQCAABXRUJQVlA4TGcCAAAvPEAXECehkJEkqWZP4GTOn+s/DYVt2zZM1/8XV2batnGHePyfoIpkJUcDaPBsYP8vGzg2IAImeAHG/d22gSAbzKl/IRFzRhGcIQqy1MccBQYk4hkhBTTxl1eG1cnXr93PzNfqANm27bZtBAFukouUpkSgwjFg/v9PugAg1+Q5ov8TAH/LQkP+nFnlKc/pctp3VVCexVvT0MVQVgleduhVhlmqvKDLlqXasw2T1Lyg4Z9K3UovDVL/7oVBWqQnnTSp+AC5DZkfjNJqDwAo7vy9rtO6ruymBWD0WQcq8CINq4scAdhj6sCOo0eCq9h1C77INsHeYQ/et9nWf9ky+N/YNCXTggFApjc29RCaLIsNY/qoH4i9Rr0FYdSpshM//F4fvmNlUPf/7NrWtq3U1FZaQm4qSUPlQxo6sDSDA4trFWVI4l0Bfaj4R1FWCQ2hrBLtR1mlQifKKnV6UFap1lLoolLza5RVKn8Fk9T/wqBS4+hUklQ5kg+y1LgS+BSWeD4RgNMo0XoieOiylVjNBM89kCM0E7zsMYq7ZgKrA4qzZgJHh9FnJfB1YI9lD962qzi+F6imdxgh0PZlm6Gm2bRgVWraQVViVWjqra2+Lfqrbdvqg/qoKWiMWoI4SiiExPrDphwymtKXSTGAxJx/TTIXN2Rbf7DJjE7IYu9uDrLsPMpZxa4AyUFkuezLS7i5qHhOAAeXe53T5+Vy+Uys4k0AwF4VLgAA1Ex3B7+NHOHhbW7iHZ7euIG1PINbqm6E1091aQ9W5IpWBMcNV7ISONN7nE4Egbh51wCdNgXCuyGv3xbl97xBcAQA"
+					title="Logo de Alura"
+					alt="Logo de Alura"
+					class="m-header__logo"
+				/>
+			</figure>
+		</header>
+		<main class="o-main">
+			<section class="m-encrypt-zone">
+				<form class="m-encrypt-zone__form">
+					<label for="textarea">
+						<textarea
+							type="text"
+							name=""
+							id="textarea"
+							placeholder="Ingrese el texto aquí"
+							class="a-encrypt-box"
+							autofocus
+						></textarea>
+					</label>
+				</form>
+				<div>
+					<p
+						id="clarify-message"
+						class="a-lead-clarify m-clarify-message m-encrypt-zone__message"
+					>
+						<span
+							id="exclamation-mark-icon"
+							class="a-exclamation-mark-icon"
+							>!</span
+						>
+						<small>Solo letras minúsculas y acentos</small>
+					</p>
+					<div class="m-encrypt-zone__buttons">
+						<button
+							id="btn-encrypt"
+							class="a-btn a-btn--primary a-btn--block"
+						>
+							Encriptar
+						</button>
+						<button
+							id="btn-decrypt"
+							class="a-btn a-btn--secondary a-btn--block"
+						>
+							Desencriptar
+						</button>
+					</div>
+				</div>
+			</section>
+			<section
+				id="initial-box-result"
+				class="m-result-box m-result-box--initial"
+			>
+				<figure id="muneco-img" class="hidden">
+					<img
+						src="./assets/muneco-ee0734e9.webp"
+						title="Imagen de una persona viendo un diamante con una lupa"
+						alt="Imagen de una persona viendo un diamante con una lupa"
+					/>
+				</figure>
+				<h3 class="a-subtitle m-result-box__title">
+					Ningún mensaje fue encontrado
+				</h3>
+				<p class="a-lead">
+					Ingresa el texto que desees encriptar o desencriptar.
+				</p>
+			</section>
+			<section id="result-text-container" class="m-result-box hidden">
+				<h4 id="result-text" class="a-lead-result">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Aliquid illo provident accusantium officia minima dolorum
+					iure ad architecto, quam nisi inventore, vitae neque maxime
+					debitis reprehenderit amet. Reiciendis, amet omnis?
+				</h4>
+				<button
+					id="btn-copy"
+					class="a-btn a-btn--secondary a-btn--block"
+				>
+					Copiar
+				</button>
+			</section>
+			<section id="popup" class="popup-container">
+				<div class="popup">
+					<h2 class="popup__title">Copiado con éxito</h2>
+					<p class="popup__message">
+						Texto copiado a tu portapapeles
+					</p>
+				</div>
+			</section>
+		</main>
+		
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-M8H4YB694S"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'G-M8H4YB694S');
+		</script>
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org/",
+				"@type": "WebApplication",
+				"name": "Encriptador de texto",
+				"offers": {
+					"@type": "Offer",
+					"price": "0"
+				},
+				"browserRequirements": "HTML5, CSS3, JAVASCRIPT",
+				"applicationCategory": "EducationalApplication",
+				"applicationSubCategory": "Encriptador y desencriptador",
+				"operatingSystem": "All",
+				"screenshot": "https://github.com/GaleedGutierrez/Encriptador-de-texto-Alura-Challenges-ONE-2023/blob/main/assets/readme/screenshot.webp",
+				"softwareVersion": "1.0.0",
+				"abstract": "Encriptador y desencriptador de texto"
+			}
+		</script>
+	</body>
+</html>
