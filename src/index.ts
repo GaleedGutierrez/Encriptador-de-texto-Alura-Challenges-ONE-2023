@@ -2,6 +2,7 @@ import '../styles/styles.scss';
 import '../styles/tablet.scss';
 import '../styles/desktop.scss';
 
+import { EVowels } from './enums.mjs';
 import {
 	BTN_COPY,
 	BTN_DECRYPT,
@@ -73,10 +74,6 @@ function validateSentence(sentence: string): boolean {
 	return false;
 }
 
-function copy() {
-	TEXTAREA.value = RESULT_TEXT.innerText;
-}
-
 function toggleError(event: KeyboardEvent): void {
 	const TARGET = event.target as HTMLTextAreaElement;
 	const SENTENCE = TARGET.value;
@@ -138,10 +135,10 @@ function decrypt(): void {
 		if (IS_I_O_U) {
 			encryptWord = LETTER + SENTENCE.slice(i + 1, i + 4);
 			i += 3;
-		} else if (LETTER === 'a') {
+		} else if (LETTER === EVowels.A) {
 			encryptWord = LETTER + SENTENCE[i + 1];
 			i++;
-		} else if (LETTER === 'e') {
+		} else if (LETTER === EVowels.E) {
 			encryptWord = LETTER + SENTENCE.slice(i + 1, i + 5);
 			i += 4;
 		}
@@ -154,6 +151,10 @@ function decrypt(): void {
 
 	toggleResultBox(SENTENCE);
 	RESULT_TEXT.innerText = newSentence;
+}
+
+function copy() {
+	navigator.clipboard.writeText(RESULT_TEXT.innerText);
 }
 
 const ENCRYPT_VOWELS = {
