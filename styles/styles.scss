@@ -24,6 +24,7 @@
 // Molecules
 @import "./molecules/result-box";
 @import "./molecules/clarify-message";
+@import "./molecules/popup";
 
 // Organisms
 @import "./organisms/header";
@@ -33,3 +34,4 @@
 @import "./utilities/hidden";
 @import "./utilities/animation";
 @import "./utilities/animation-error";
+@import "./utilities/transitions";
