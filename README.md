@@ -22,11 +22,11 @@ El proyecto es una aplicación que debe encriptar y desencriptar texto 🔒. La 
 |   u| ufat  |
 
 ### ✅ Requisitos
-🔡 Debe funcionar solo con letras minúsculas.
-🚫 No deben ser utilizados letras con acentos ni caracteres especiales
-🔁 Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
-📝 La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
-🖥️ El resultado debe ser mostrado en la pantalla.
+- 🔡 Debe funcionar solo con letras minúsculas.
+- 🚫 No deben ser utilizados letras con acentos ni caracteres especiales
+- 🔁 Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
+- 📝 La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
+- 🖥️ El resultado debe ser mostrado en la pantalla.
 
 ### 🎁 Extras
 📋 Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
@@ -35,11 +35,11 @@ El proyecto es una aplicación que debe encriptar y desencriptar texto 🔒. La 
 
 
 ## 🚀 Descripción del proyecto
-🌐 Este proyecto consiste en una aplicación web construida con HTML, CSS y JavaScript Vanilla.
-🛡️ Para mejorar la calidad y seguridad del código, se ha utilizado TypeScript como lenguaje de programación, ya que permite el uso de tipos estáticos y evita errores en tiempo de ejecución.
-🎨 Para el estilo de la interfaz se ha empleado SASS como preprocesador de CSS, lo que facilita la organización y modularización de los estilos. Además, se ha seguido la arquitectura de CSS ATOMIT, que combina los principios de Atomic Design e ITCSS para crear un sistema de diseño escalable y mantenible.
+- 🌐 Este proyecto consiste en una aplicación web construida con HTML, CSS y JavaScript Vanilla.
+- 🛡️ Para mejorar la calidad y seguridad del código, se ha utilizado TypeScript como lenguaje de programación, ya que permite el uso de tipos estáticos y evita errores en tiempo de ejecución.
+- 🎨 Para el estilo de la interfaz se ha empleado SASS como preprocesador de CSS, lo que facilita la organización y modularización de los estilos. Además, se ha seguido la arquitectura de CSS ATOMIT, que combina los principios de Atomic Design e ITCSS para crear un sistema de diseño escalable y mantenible.
 ⚡ Como herramienta de desarrollo se ha elegido Vite, que ofrece un entorno de desarrollo rápido y eficiente, con soporte para TypeScript y SASS.
-🌳 Como manejador de versiones he utilizado git, que permite el control y seguimiento de los cambios realizados en el código.
+- 🌳 Como manejador de versiones he utilizado git, que permite el control y seguimiento de los cambios realizados en el código.
 ### Tecnologías
 <div align="center">
 	<img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript logo">
