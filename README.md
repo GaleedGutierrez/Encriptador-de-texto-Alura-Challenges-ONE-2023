@@ -13,13 +13,13 @@
 El proyecto es una aplicación que debe encriptar y desencriptar texto 🔒. La encriptación se realiza mediante la sustitución de vocales por un conjunto de letras.
 
 ### 🔑 Las "llaves" de encriptación son
-|🔠  Llave |🔡  Conversión |
+|🔠  Llave    |🔡  Conversión |
 | ------------ | ------------ |
-|a   | ai  |
-| e  | enter  |
-| i  | imes  |
-|  o | ober  |
-|   u| ufat  |
+|a   | ai                     |
+| e  | enter                  |
+| i  | imes                   |
+|  o | ober                   |
+|   u| ufat                   |
 
 ### ✅ Requisitos
 - 🔡 Debe funcionar solo con letras minúsculas.
